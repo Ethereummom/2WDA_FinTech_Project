@@ -1,3 +1,1 @@
-# 2WDA_FinTech_Project
-2WDA_GROUP8_Project
-컴정 8조 핀테크프로젝트
+백준 알고리즘 어려운 것들만 모아놓음(silver이상)
