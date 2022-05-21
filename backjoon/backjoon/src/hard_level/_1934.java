@@ -1,4 +1,4 @@
-package backjoon;
+package hard_level;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
