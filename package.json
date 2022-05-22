@@ -1,0 +1,19 @@
+{
+  "name": "2wda_fintech_project",
+  "version": "1.0.0",
+  "description": "2WDA_GROUP8_Project\r 컴정 8조 핀테크프로젝트",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethereummom/2WDA_FinTech_Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ethereummom/2WDA_FinTech_Project/issues"
+  },
+  "homepage": "https://github.com/Ethereummom/2WDA_FinTech_Project#readme"
+}
