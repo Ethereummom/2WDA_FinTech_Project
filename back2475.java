@@ -1,17 +1,19 @@
+package bronze5;
 import java.util.Scanner;
 
-public class back1000 {
+public class back2475 {
     public static void main(String[] args) {
-        /**
-         *  백준 문제 1000번
-         */
         Scanner sc = new Scanner(System.in);
 
+        int x = sc.nextInt();
+        int y = sc.nextInt();
+        int z = sc.nextInt();
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        System.out.println(a+b);
-
+        System.out.println((x*x+y*y+z*z+a*a+b*b)%10);
+        
         sc.close();
+
     }
 }
