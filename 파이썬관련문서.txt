@@ -1,0 +1,12 @@
+파이썬 관련 문서들
+
+1.Requests 모듈
+https://blog.naver.com/hansoo0724/222670176899
+2.Urllib.request모듈
+https://blog.naver.com/hansoo0724/222670229164
+3.BeautifulSoup모듈
+https://blog.naver.com/hansoo0724/222670815424
+4.selenium
+https://blog.naver.com/hansoo0724/222672719427
+5.DB연동-SELECT
+https://blog.naver.com/hansoo0724/222664610648
