@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
@@ -25,7 +25,7 @@ class MyWindow(QMainWindow, form_class):
 app = QApplication(sys.argv)
 window = MyWindow()
 window.show()
-=======
+
 import sys
 from PyQt5.QtWidgets import *
 from PyQt5 import uic
@@ -52,5 +52,5 @@ class MyWindow(QMainWindow, form_class):
 app = QApplication(sys.argv)
 window = MyWindow()
 window.show()
->>>>>>> Stashed changes
+
 app.exec_()
