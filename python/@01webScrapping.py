@@ -30,7 +30,7 @@ html = requests.get(url).text
 soup = BeautifulSoup(html,"html5lib")
 tags = soup.select(".lwidth tbody .strong td em")
 # tags2 = soup.select("table tbody tr td em")
-tags2 = soup.select("#tab_con1 > div:nth-child(3) > table > tbody > tr.strong > td > em")
+tags2 = soup.select("#tab_con1 > div:nth-of-type(3) > table > tbody > tr.strong > td > em")
 # BS 모듈이 CSS 셀렉터를 100%지원하지 않아 nth-child를 인식 못한다고 했었는데 인식잘한다.
 # 혹여 인식 못한다면 nth-of-type()을 사용하면된다.
 tag2 = tags2[0]
