@@ -49,6 +49,12 @@ class MatplotlibWidget(QMainWindow):
         self.lineEdit_4.setText(str(samsung.iloc[0]))
         nas = fdr.DataReader('NASDAQCOM', data_source='fred',start='2022-06-02')['NASDAQCOM']
         self.lineEdit_5.setText(str(nas.iloc[0]))
+        sp = fdr.DataReader('US500', '2022-06-03')['Close']
+        self.lineEdit_6.setText(str(sp.iloc[0]))
+        kospi = fdr.DataReader('KS11', start='2022-06-03')['Close']
+        self.lineEdit_7.setText(str(kospi.iloc[0]))
+        gold = fdr.DataReader('ZG', '2022-06-02')['Close']
+        self.lineEdit_8.setText(str(gold.iloc[0]))
         cur_time = QTime.currentTime()
         str_time = cur_time.toString("hh:mm:ss")
         self.lineEdit_9.setText(str_time)
