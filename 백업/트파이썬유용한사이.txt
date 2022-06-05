@@ -1,0 +1,17 @@
+파이썬관련
+
+Requests모듈
+https://blog.naver.com/hansoo0724/222670176899
+
+Urllib모듈
+https://blog.naver.com/hansoo0724/222670229164
+
+Beautifulsoup모듈
+https://blog.naver.com/hansoo0724/222670815424
+
+Selenium의 Webdriver
+https://blog.naver.com/hansoo0724/222672719427
+
+DB연동- SELECT
+
+https://blog.naver.com/hansoo0724/222664610648
