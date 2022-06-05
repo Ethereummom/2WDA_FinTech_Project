@@ -18,7 +18,7 @@ df_krx.to_csv('stockList.csv', mode ='w', encoding='utf-8-sig')
 #이름으로 코드 찾기
 
 def codeFromName(name):
-    nameList = list(df_krx['Name'])
+    nameList = list(df_krx['삼성전자'])
     return df_krx['Symbol'][nameList.index(name)]
 
 #timeframe설정

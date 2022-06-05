@@ -28,7 +28,7 @@ plt.figure(1)
 plt.plot(t1)
 
 plt.figure(2)
-plt.plot(t2)
+plt.bar(t2)
 
 # plt.subplot(대구연도별)
 plt.show()
