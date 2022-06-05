@@ -7,6 +7,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import datetime
 import sys
+import pykorbit
 
 class MatplotlibWidget(QMainWindow):
     subject='subject'
@@ -38,6 +39,16 @@ class MatplotlibWidget(QMainWindow):
         self.timer.timeout.connect(self.inquiry)
 
     def inquiry(self):
+        price = pykorbit.get_current_price("BTC")
+        self.lineEdit_1.setText(str(price))
+        price = pykorbit.get_current_price("ETH")
+        self.lineEdit_2.setText(str(price))
+        price = pykorbit.get_current_price("XRP")
+        self.lineEdit_3.setText(str(price))
+        samsung = fdr.DataReader(symbol='005930',  start= '2022-06-03')['Close']
+        self.lineEdit_4.setText(str(samsung.iloc[0]))
+        nas = fdr.DataReader('NASDAQCOM', data_source='fred',start='2022-06-02')['NASDAQCOM']
+        self.lineEdit_5.setText(str(nas.iloc[0]))
         cur_time = QTime.currentTime()
         str_time = cur_time.toString("hh:mm:ss")
         self.lineEdit_9.setText(str_time)
