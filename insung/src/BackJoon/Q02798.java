@@ -1,8 +1,8 @@
-package backjoon_insung;
+package BackJoon;
 
 import java.util.Scanner;
 
-public class Q2798_Insung {
+public class Q02798 {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		// n개 만큼의 배열 생성

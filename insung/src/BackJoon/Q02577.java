@@ -1,8 +1,8 @@
-package backjoon_insung;
+package BackJoon;
 
 import java.util.Scanner;
 
-public class test {
+public class Q02577 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n1 = sc.nextInt();
@@ -45,8 +45,8 @@ public class test {
 				break;
 			}
 		}
-		for (int e : array) {
-			System.out.println(array[e]);
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(array[i]);
 		}
 	}
 }

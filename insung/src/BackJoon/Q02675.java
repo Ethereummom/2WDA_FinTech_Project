@@ -1,8 +1,8 @@
-package backjoon_insung;
+package BackJoon;
 
 import java.util.Scanner;
 
-public class Q2675_Insung {
+public class Q02675 {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		int t = sc.nextInt();

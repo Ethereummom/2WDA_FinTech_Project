@@ -1,9 +1,8 @@
-package backjoon_insung;
+package BackJoon;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q2309_Insung {
+public class Q02309_plus {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		// 배열에 난쟁이 9명 키 입력 받고 총합 계산
@@ -18,6 +17,16 @@ public class Q2309_Insung {
 		int villain = total - 100;
 
 		// 브루트 포스로 빌런 두명을 탐색
+		searchVillian(villain, arr);
+		
+		// 버블 소트
+		bubblesort(arr);
+
+		//출력
+		printArr(arr);
+	}
+	
+	static int[] searchVillian(int villain, int[] arr) {
 		a : for (int i = 0; i < arr.length - 1; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
 				if (villain == arr[i] + arr[j]) {
@@ -27,8 +36,10 @@ public class Q2309_Insung {
 				}
 			}
 		}
-		// 버블 소트
-//		Arrays.sort(arr);
+		return arr;
+	}
+	
+	static int[] bubblesort(int[] arr) {
 		int temp = 0; // 임시변수
 		for (int i = 0; i < arr.length - 1; i++) {
 			for (int j = i + 1; j < arr.length; j++) {
@@ -39,9 +50,13 @@ public class Q2309_Insung {
 				}
 			}
 		}
-
+		return arr;
+	}
+	
+	static void printArr(int[] arr) {
 		for (int i = 2; i < arr.length; i++) {
 			System.out.println(arr[i]);
 		}
+		
 	}
 }

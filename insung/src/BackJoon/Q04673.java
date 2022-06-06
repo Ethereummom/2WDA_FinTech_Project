@@ -1,6 +1,6 @@
-package backjoon_insung;
+package BackJoon;
 
-public class Q4673_Insung {
+public class Q04673 {
 	public static void main(String args[]) {
 		boolean[] nums = new boolean[10001];
 		// 셀프 넘버에 해당하는 배열의 boolean 값을 true로 바꾼다
