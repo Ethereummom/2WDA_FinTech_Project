@@ -74,8 +74,8 @@ public class UpdateFrame extends JFrame {
 		contentPane.add(joinCompleteBtn);
 
 		setVisible(true);
-		// 회원가입완료 액션
 
+// 회원 정보 수정 액션
 		joinCompleteBtn.addActionListener(new ActionListener() {
 
 			@Override
@@ -84,11 +84,11 @@ public class UpdateFrame extends JFrame {
 				newName = tfName.getText();
 
 				addUserInfo aui = new addUserInfo();
-				if (newPW.equals(""))
-					aui.updateName(uid, newName);
-				else if (newName.equals(""))
-					aui.updatePW(uid, newPW);
-				else {
+				if (newPW.equals("")) 				// 회원정보 수정란에 새비밀번호가 비어있다면
+					aui.updateName(uid, newName);	// 이름만 변경
+				else if (newName.equals(""))		// 이름이 비어있다면
+					aui.updatePW(uid, newPW);		// 비밀번호만 변경
+				else {								// 아니라면 둘다 변경
 					aui.updateName(uid, newName);
 					aui.updatePW(uid, newPW);
 				}

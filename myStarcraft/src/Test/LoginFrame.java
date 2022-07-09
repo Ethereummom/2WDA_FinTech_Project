@@ -87,6 +87,11 @@ public class LoginFrame extends JFrame {
 			}
 		});
 
+
+// 로그인
+// 성공시 아이디 비밀번호를 변수로 저장
+// 변수로 저장하는 이유는 추후 어떤 id가 로그인 중인지 확인을 위해
+// 근데 실제로 사용된건 id만 사용하였음
 		loginBtn.addActionListener(new ActionListener() {
 
 			@Override

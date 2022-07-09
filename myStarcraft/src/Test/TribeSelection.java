@@ -115,6 +115,8 @@ class TribeSelection extends JFrame implements ActionListener
 		UserLB.setBounds(110, 140, 70, 20);
 		panel.add(UserLB);
 		
+// 기존의 종족 선택창에
+// 정보 수정, 회원 탈퇴 버튼 생성
 		updateBtn = new JButton("정보수정");
 		updateBtn.setBounds(400, 250, 104, 29);
 		panel.add(updateBtn);
@@ -123,6 +125,8 @@ class TribeSelection extends JFrame implements ActionListener
 		deleteBtn.setBounds(400, 300, 106, 29);
 		panel.add(deleteBtn);
 		
+
+// 탈퇴 버튼 클릭시 회원 탈퇴 메소드 실행 및 탈퇴 메시지 출력
 		deleteBtn.addActionListener(new ActionListener() {
 			
 			@Override
@@ -134,6 +138,8 @@ class TribeSelection extends JFrame implements ActionListener
 			}
 		});
 		
+// 정보 변경 버튼 클릭시
+// 현재 접속중인 id를 회원 정보 변경 페이지 객체에 전송
 		updateBtn.addActionListener(new ActionListener() {
 			
 			@Override
@@ -145,6 +151,8 @@ class TribeSelection extends JFrame implements ActionListener
 		});
 	}
 
+// 스타 실행 메소드
+// 실행시 변경하여 scv 10마리를 가지고 하는 그 파일이 실행됨
 	public void actionPerformed(ActionEvent e) {
 		Random rand = new Random();
 		if(e.getSource()==Start){
